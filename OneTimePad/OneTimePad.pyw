@@ -37,7 +37,7 @@ class OneTimePad:
 		# to the first option
 		bytes_key:list = []
 		if opt == 1:
-			with open("key.lock", "rb") as file:
+			with open("key_message.lock", "rb") as file:
 				data = file.read()
 			for i in data:
 				bytes_key.append(i)
